@@ -1,0 +1,6 @@
+There are functions that exist in the global namespace, which are used mainly to provide information about the transactions in the network. 
+There are two such main functions defined as part of the transaction context.
+These are:
+
+tx.gasprice: Returns the gas price of the transaction sent by the sender as part of the transaction
+tx.origin: Returns the address of the original sender of the transaction
