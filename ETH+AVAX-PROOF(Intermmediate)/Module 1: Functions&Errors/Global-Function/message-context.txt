@@ -1,0 +1,6 @@
+There are some global functions that are used to capture the properties of the messages. 
+The main functions in the Message context are:
+
+msg.value: Returns the number of Wei that was sent with the message or the transaction
+msg.sender: Returns the immediate sender of the message or the transaction. Unlike tx.origin, msg.sender returns the address of the previous account in the flow of the message. If A sends the message to B and then B sends it to C, then if C calls msg.sender on that message, it will receive the address of B as the return value.
+msg.gasleft: This function returns the remaining gas for the transaction. If an account feels that the gas remaining is inadequate or insufficient for a transaction to complete, then it will fail the transaction.
