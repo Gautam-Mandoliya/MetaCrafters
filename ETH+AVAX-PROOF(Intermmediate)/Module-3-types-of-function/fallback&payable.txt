@@ -1,0 +1,18 @@
+Introduction to Fallback Functions
+Fallback functions have following features:
+
+Called when a non-existent function is called on the contract
+Required to be marked external
+Has no name, no arguments, no return and cannot be marked payable
+Defined once per contract
+Throws exception if the contract receives plain Ether without data
+Limited to 2300 gas when called by another function
+Introduction to Payable Functions
+Payable functions are used whenever you want your smart contract code to accept Ether from users. So, if your function wants to accept Ether, we need to use payable functions
+
+Payable functions have the following features:
+
+Allows accepting Ether from a caller
+Fails if the sender has not provided Ether
+Other functions do not accept Ether, only payable functions allow it
+Functions and addresses declared payable can receive Ether in the contract
